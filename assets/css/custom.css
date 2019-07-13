@@ -7,3 +7,16 @@
 .wrapper {
   margin-bottom: 30px;
 }
+
+.main-wrapper .section-title .icon-holder {
+  top: -1px;
+  line-height: 30px;
+}
+
+.main-wrapper .section:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-wrapper .contact-list li i {
+  margin-right: 5px;
+}

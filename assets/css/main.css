@@ -46,10 +46,7 @@ p:last-child {
 }
 
 .wrapper {
-  max-width: 960px;
-  margin: 20px auto;
-  position: relative;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0;
 }
 
 .sidebar-wrapper {
@@ -176,17 +173,13 @@ p:last-child {
 
 .main-wrapper {
   background: #fff;
-  display: flex;
-  gap: 20px;
 }
 
 .main-wrapper .left-side {
-  width: 75%;
   padding: 20px;
 }
 
 .main-wrapper .right-side {
-  width: 25%;
   padding: 20px;
   background: rgba(0,0,0,0.05);
 }
@@ -233,6 +226,9 @@ p:last-child {
   margin-bottom: 20px;
 }
 
+.experiences-section-items {
+
+}
 .experiences-section-items .item {
   margin-bottom: 20px;
 }
@@ -330,9 +326,6 @@ p:last-child {
     position: static;
     width: inherit;
   }
-  .main-wrapper {
-    padding: 30px;
-  }
   .main-wrapper .time {
     position: static;
     display: block;
@@ -351,14 +344,6 @@ p:last-child {
     margin-bottom: 0;
   }
 }
-
-.experiences-section-items {
-  /*display: grid;*/
-  /*grid-template-columns: 48% 48%;*/
-  /*grid-column-gap: 4%;*/
-  /*grid-row-gap: 20px;*/
-}
-
 
 .contact-list {
   margin-top: 10px;
@@ -405,6 +390,34 @@ p:last-child {
   }
 
   .wrapper {
-    margin: 0;
+
+  }
+}
+
+@media (min-width: 768px) {
+  .main-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+
+  .main-wrapper .left-side {
+    width: 75%;
+    padding: 20px;
+  }
+
+  .main-wrapper .right-side {
+    width: 25%;
+    padding: 20px;
+    background: rgba(0,0,0,0.05);
+  }
+
+  .main-wrapper .introduction {
+    margin-bottom: 20px;
+  }
+
+  .wrapper {
+    width: 960px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 }
